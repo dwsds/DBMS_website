@@ -112,8 +112,15 @@ body {
 
 #overview {
     padding: 8rem 0;
-    background-color: black;/* Prevent repeating the image */
+    background-color: black; /* Background color */
+    background-image: 
+        linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 40%), /* Gradient to fade out */
+        url('assets/curr.jpg'); /* Background image */
+    background-position: right center; /* Position the image on the right */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-size: fit; /* Cover the section area with the image */
 }
+
 
 #topics{
     background-color: #f0f0f0;
@@ -123,11 +130,13 @@ body {
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
     color: white;
+    font-size: 18px;
     
 }
 
 #instructor{
     padding: 0rem 0;
+    font-size: 19px;
 }
 
 #schedule {
@@ -203,5 +212,6 @@ body {
 /* Margin for the content within the section */
 .about-content {
     margin-left: 15rem;
-    margin-right: 15rem; /* Adjust the left margin as needed */
+    margin-right: 15rem; 
+    font-size: 18px;/* Adjust the left margin as needed */
 }
